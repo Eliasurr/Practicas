@@ -118,3 +118,24 @@
     border-radius: 5px !important;
 }
 
+.btn-group-cards{
+    margin-top: 15px;
+    margin-left: 8px;
+}
+
+.btn-warning,
+.btn-info{
+    margin: 5px 0 0 5px;
+    padding: 1px !important;
+    height: 15px !important;
+}
+
+.btn-info{
+    color: #fff !important;
+}
+
+b{
+    font-size: 10px;
+    position: relative;
+    bottom: 8px;
+}
