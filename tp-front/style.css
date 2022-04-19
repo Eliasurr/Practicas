@@ -107,7 +107,7 @@
     bottom: 20px;
 }
 
-.btn-light{
+.light{
     margin-right: 20px;
     background: rgba(0, 0, 0, 0) !important;
     color: #fff !important;
@@ -124,7 +124,9 @@
 }
 
 .btn-warning,
-.btn-info{
+.btn-info,
+.btn-secondary,
+.btn-danger{
     margin: 5px 0 0 5px;
     padding: 1px !important;
     height: 15px !important;
@@ -139,3 +141,29 @@ b{
     position: relative;
     bottom: 8px;
 }
+
+.banner2{
+    width: 50%;
+    height: 400px;
+    background: url(img/honolulu.jpg) center center/cover;
+}
+
+.txtbanner2{
+    width: 50%;
+    height: 400px;
+    background: hsl(200, 10%, 25%);
+    color:#fff;
+}
+
+.txtbanner2 h3{
+    margin: 10px 0 0 10px;
+}
+
+.txtbanner2 p{
+    margin: 5px 0 0 10px;
+}
+
+.txtbanner2 button{
+    margin: 20px 0 0 10px;
+}
+
