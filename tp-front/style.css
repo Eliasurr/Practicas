@@ -167,3 +167,7 @@ b{
     margin: 20px 0 0 10px;
 }
 
+.input{
+    display: inline !important;
+    width: 40% !important;  
+}   
