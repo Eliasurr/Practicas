@@ -210,3 +210,49 @@ b{
     align-items: center;    
     height: 100%;
 }
+
+.a__comprartickets{
+    text-decoration: none;
+    color:rgb(21, 116, 21);
+}
+
+.a__comprartickets:hover{
+    color: rgb(33, 179, 33);
+}
+
+.blue-frame{
+    border: 1px solid rgb(0, 0, 200);
+    text-align: center;
+}
+
+.green-frame{
+    border: 1px solid rgb(0, 100, 0);
+    text-align: center;
+}
+
+.yellow-frame{
+    border: 1px solid rgb(200, 150, 0);
+    text-align: center;
+}
+
+.ticketas{
+    justify-self: center;
+}
+
+.grey-txt{
+    color: #999;
+    font-size: 12px;
+    position: relative;
+    top: 15px;
+}
+
+.input-form2{
+    display: inline !important;
+    width: 25% !important;
+    margin-left: 5px;
+}
+
+.input-correo{
+    width: 30% !important;
+    
+}
