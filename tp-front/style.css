@@ -29,7 +29,7 @@
 .nav__ul{
     list-style-type: none;
     color: #bbb;
-    font-size: 20px;
+    font-size: 15px;
     display: flex;
     justify-content: space-around;
     align-items: center;    
@@ -253,6 +253,40 @@ b{
 }
 
 .input-correo{
-    width: 30% !important;
-    
+    width: 50.7%  !important;
+    position: relative;
+    left: 335px;
+    margin-top: 15px;
+}
+
+.label__categoria{
+    position: relative;
+    left: 45px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.p__total{
+    text-align: left;
+    position: relative;
+    left: 315px;
+    margin: 20px;
+    border: 1px solid rgb(68, 157, 247);
+    border-radius: 4px;
+    width: 51%;
+    padding: 10px;
+    color:rgb(29, 29, 226);
+    background-color: skyblue;
+}
+
+#btnBorrar{
+    width: 25%;
+    margin-bottom: 15px;
+}
+
+#btnResumen{
+    width: 25%; 
+    position: relative;
+    left: 9px;
+    margin-bottom: 15px;
 }
