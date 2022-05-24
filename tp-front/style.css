@@ -246,47 +246,41 @@ b{
     top: 15px;
 }
 
-.input-form2{
-    display: inline !important;
-    width: 25% !important;
-    margin-left: 5px;
-}
-
-.input-correo{
-    width: 50.7%  !important;
-    position: relative;
-    left: 335px;
-    margin-top: 15px;
-}
-
-.label__categoria{
-    position: relative;
-    left: 45px;
-    margin: 10px 0;
-    font-weight: bold;
-}
-
-.p__total{
-    text-align: left;
-    position: relative;
-    left: 315px;
-    margin: 20px;
-    border: 1px solid rgb(68, 157, 247);
-    border-radius: 4px;
-    width: 51%;
-    padding: 10px;
-    color:rgb(29, 29, 226);
-    background-color: skyblue;
-}
-
 #btnBorrar{
-    width: 25%;
     margin-bottom: 15px;
 }
 
 #btnResumen{
-    width: 25%; 
-    position: relative;
-    left: 9px;
     margin-bottom: 15px;
+}
+
+.formulario{
+    width: 50%;
+}
+
+#nombre,
+#apellido,
+#correo,
+#cantidad,
+#categoria,
+#borrar,
+#resumen
+{
+    width: 40%;
+}
+
+.total{
+    border:1px solid rgb(104, 173, 241);
+    width: 40%;
+    color: rgb(5, 5, 124);
+    background-color: rgb(143, 176, 236);
+    padding: 6px;
+    margin: 25px 0;
+    border-radius: 5px;
+    
+}
+
+.footertkt{
+    position: relative;
+    top: 136px;
 }

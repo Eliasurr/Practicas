@@ -75,28 +75,45 @@
                         <h2>VALOR DE TICKET $200</h2>
                     </div>
                 <!-- Formulario -->
-                    <div class="col-12 text-center">
-                        <input type="text" class="form-control input-form2" id="nombre" placeholder="Nombre">
-                        <input type="text" class="form-control input-form2" id="apellido" placeholder="Apellido">
-                        <input type="text" class="form-control input-correo" id="correo" placeholder="Correo">
-                        <label class="label__categoria">Categoria</label>
-                        <br>
-                        <input type="text" class="form-control input-form2" id="Cantidad" placeholder="Cantidad">
-                        <select name="categoria" id="categoria" class="form-control input-form2">
-                            <option value="estudiante">Estudiante</option>
-                            <option value="trainee">Trainee</option>
-                            <option value="junior">Junior</option>
-                        </select>
-                        <br>
-                        <p class="p__total">Total a pagar: $ </p>
-                        <button class="btn btn-success" id="btnBorrar">Borrar</button>
-                        <button class="btn btn-success" id="btnResumen">Resumen</button>
-                    </div>
-                </div>
+                    <!-- Nombre -->
+                   <div class="col-6 d-flex justify-content-end p-2">
+                       <input type="text" id="nombre" class="form-control" placeholder="Nombre">
+                   </div>
+                    <!-- Apellido -->
+                   <div class="col-6 d-flex justify-content-start p-2">
+                       <input type="text" id="apellido" class="form-control" placeholder="Apellido">
+                   </div>
+                   <!-- Correo -->
+                   <div class="col-12 d-flex justify-content-center">
+                       <input type="text" id="correo" class="form-control" placeholder="Correo">
+                   </div>
+                   <!-- Cantidad -->
+                   <div class="col-6 d-flex justify-content-end p-2">
+                       <input type="number" id="cantidad" class="form-control" placeholder="Cantidad">
+                   </div>
+                   <!-- Categoria -->
+                   <div class="col-6 justify-content-start p-2">
+                       <select name="categoria" id="categoria" class="form-control">
+                           <option value="estudiante">Estudiante</option>
+                           <option value="trainee">Trainee</option>
+                           <option value="junior">Junior</option>
+                       </select>
+                   </div>
+                   <!-- Total -->
+                   <div class="col-12 d-flex justify-content-center">
+                       <span class="total" id="total">Total a pagar $:</span>
+                   </div>
+                   <!-- Botones -->
+                   <div class="col-6 d-flex justify-content-end p-2 mb-2">
+                       <button class="btn btn-success" id="borrar">Borrar</button>
+                   </div>
+                   <div class="col-6 d-flex justify-content-start p-2 mb-2">
+                        <button class="btn btn-success" id="resumen">Resumen</button>
+                   </div>
             </section>
             <footer>
                 <!-- Footer -->
-                <div class="col-md-12  footer">
+                <div class="col-md-12 footer footertkt">
                     <ul class="footer__ul">
                         <li class="footer__ul--li">Preguntas frecuentes</li>
                         <li class="footer__ul--li">Contactanos</li>

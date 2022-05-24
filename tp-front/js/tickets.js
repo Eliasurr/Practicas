@@ -9,15 +9,17 @@ let cantidad = document.getElementById('cantidad');
 let  o = document.getElementById('categoria');
 let categoria = o.options[o.selectedIndex].text;
 
-const nuevoTicket = {
-    nombre: nombre.innerHTML,
-    apellido: apellido.innerHTML,
-    correo: correo.innerHTML,
-    categoria: categoria.innerHTML
+let nuevoTicket = {
+    nombre: nombre.innerText,
+    apellido: apellido.innerText,
+    correo: correo.innerText,
+    categoria: categoria
 };
 
-const btnResumen = document.getElementById('btnResumen');
+tickets.push(JSON.stringify(nuevoTicket));
+
+const btnResumen = document.getElementById('resumen');
 
 btnResumen.addEventListener('click',()=>{
-    alert(nuevoTicket.nombre,nuevoTicket.apellido,nuevoTicket.correo,nuevoTicket.categoria);
+    alert(tickets);
 })
