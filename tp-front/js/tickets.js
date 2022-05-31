@@ -1,25 +1,35 @@
-const valorTkt = 200;
-let tickets = [];
+function get(id){
+    return document.getElementById(id);
+}
 
 
-let nombre = document.getElementById('nombre');
-let apellido = document.getElementById('apellido');
-let correo = document.getElementById('correo');
-let cantidad = document.getElementById('cantidad');
-let  o = document.getElementById('categoria');
-let categoria = o.options[o.selectedIndex].text;
+const btnResumen = get('btnResumen');
+const tickets = [];
+let  valorTkt = 200;
 
-let nuevoTicket = {
-    nombre: nombre.innerText,
-    apellido: apellido.innerText,
-    correo: correo.innerText,
-    categoria: categoria
-};
+let nombre = get('nombre');
+let apellido = get('apellido');
+let correo = get('correo');
+let cantidad = get('cantidad');
+let cat = get('categoria');
+let categoria = cat.options[cat.selectedIndex].text;
 
-tickets.push(JSON.stringify(nuevoTicket));
-
-const btnResumen = document.getElementById('resumen');
 
 btnResumen.addEventListener('click',()=>{
+    crearOrden();
+});
+
+
+function crearOrden(){
+    let nuevoTicket = {
+        nombre: nombre.value,
+        apellido: apellido.value,
+        correo: correo.value,
+        cantidad: cantidad.value,
+        categoria: categoria
+    }
+    let ticketFinal = JSON.stringify(nuevoTicket);
+    tickets.push(ticketFinal);
+    localStorage.setItem('ticket',ticketFinal);
     alert(tickets);
-})
+}
