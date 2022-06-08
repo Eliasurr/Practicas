@@ -12,24 +12,39 @@ let apellido = get('apellido');
 let correo = get('correo');
 let cantidad = get('cantidad');
 let cat = get('categoria');
+let total = get('total');
 let categoria = cat.options[cat.selectedIndex].text;
+
+//Ticket
+let nuevaOrden = {
+    nombre: nombre.value,
+    apellido: apellido.value,
+    correo: correo.value,
+    cantidad: cantidad.value,
+    categoria: categoria
+}
+
+//Cambio de valor cantidad, cambia el <span> total
+cantidad.addEventListener('change',()=>{
+    costoTickets();
+})
 
 
 btnResumen.addEventListener('click',()=>{
-    crearOrden();
+    resumenCompra();
 });
 
+//Calcular valor de los tickets
+function costoTickets(){
+    let cantidad = parseInt(nuevaOrden.cantidad);
+    let precioTickets = cantidad * valorTkt;
+    total.innerText = `Total a pagar $: ${precioTickets}`
+}
 
-function crearOrden(){
-    let nuevoTicket = {
-        nombre: nombre.value,
-        apellido: apellido.value,
-        correo: correo.value,
-        cantidad: cantidad.value,
-        categoria: categoria
-    }
-    let ticketFinal = JSON.stringify(nuevoTicket);
-    tickets.push(ticketFinal);
-    localStorage.setItem('ticket',ticketFinal);
-    alert(tickets);
+
+
+//Resumen de compra
+
+function resumenCompra(){
+
 }
